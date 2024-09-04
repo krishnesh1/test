@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&display=swap");
+:root {
+  --font-main: "Inter", sans-serif;
+  --color-primary: #db4444;
+  --color-dark-1: #000000;
+  --color-dark-2: #7d8184;
+  --color-white-1: #ffffff;
+  --color-white-2: #f5f5f5;
+  --color-green: #00d656;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+html {
+  font-size: 10px;
+  /* 1 rem 10px */
+}
+body {
+  font-family: var(--font-main);
+  font-size: 1.6rem;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Navbar written by Krishnesh Karn */
+h2
+.container{
+  max-width: 114rem;
+  margin:0 auto ;
+  padding: 0rem 1rem;
+}
+.top_nav{
+  width: 100%;
+  height: 4rem;
+  background-color: var(--color-dark-1);
+}
+.top_nav_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_nav_wrapper{
+  display: flex;
+  color:var(--color-white-1);
+}
+
+.nav-logo{
+  width:50px;
+}
+
+.top_nav_p{
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+.top_nav_link{
+  margin-left: 1rem;
+  font-size:1.4rem;
+  font-weight: 600;
+  color: var(--color-white-1);
+}
+.nav{
+  width: 100%;
+  height: 8rem;
+  border-bottom: 1px solid var(--color-dark-1);
+}
+.nav_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav_list{
+  display: flex;
+}
+.nav_items{
+  display: flex;
+}
+.nav_logo{
+font-size: 2.2rem;
+font-weight: 800;
+color: var(--color-dark-1);
+}
+.nav_item{
+  margin: 0rem 0.5rem;
+}
+.nav_link{
+ padding: 0.6rem;
+ color: var(--color-dark-1);
+}
+.nav_form{
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  background-color: var(--color-white-2);
+}
+.nav_input{
+  padding: 0.4rem;
+  background-color:transparent ;
+  outline: none;
+  border: none;
+}
+.nav_search{
+cursor: pointer;
+}
+.nav_items{
+display: flex;
+align-items: center;
+}
+.nav_heart{
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.nav_cart{
+  margin-left: 1rem;
+}
+
+/*Slider Design writtern By Samir*/
+
+.slider-container{
+  width:800px;
+  height: 60vh;
+  position:relative;
+  overflow: hidden;
+  margin-top:20px;
+} 
+
+.slider{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slide{
+  flex:0 0 100%;
+  height:400px;
+  background-size: cover;
+  background-position:center center;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit:cover;
+}
+
+.slider-controls{
+  position:absolute;
+  bottom:50%;
+  left:50%;
+  transform:translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-slider,.next-slider{
+  margin:0 10px;
+  cursor: pointer;
+}
+
+.slide.active{
+  transform:translateX(0);
+}
+
+.hero-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* sidebar design written by Samir Khanal */
+.hero-wrapper .sidebar{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px solid var(--color-dark-2);
+}
+
+.hero-wrapper .sidebar a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+
+/* Flash Sale Timer Design Written By Samir Khanal */
+.flash-sale{
+  width:400px;
+  max-width: 100%;
+  height:150px;
+  border: 1px solid var(--color-dark-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+
+.flash-sale h2{
+  font-size: 1.5 rem;
+  text-align: center;
+}
+
+.flash_sale-timer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 30%;
+  padding: 0 40px;
+}
+
+.flash_sale-timer input{
+  width: 40px;
+  height:100px;
+  text-align: center;
+  font-size:30px;
+}
+
+.flash_sale-timer label{
+  font-size: 10px;
+  color: var(--color-dark-2);
+  border-color: transparent;
+  text-align: center;
+}
+
+.flash_sale-timer div{
+  display: flex;
+  flex-direction: column;
+}
+
+.flash-sale {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+
+
+
+/* Designing for product carousel by Samir Khanal */
+/* Styles for the carousel container */
+.carousel-container {
+  width: 80%;
+  margin: 50px auto;
+  overflow: scroll;
+}
+
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+.product-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Category section written by Subash Shah */
+.category_item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr repeat(6, 1fr);
+  grid-gap: 2rem;
+  overflow: auto;
+}
+
+.category_item::-webkit-scrollbar {
+  display: none;
+}
+
+.category_container {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  border: 1px solid gray;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cat_name {
+  width: auto;
+  height: auto;
+}
+
+.sec_p {
+  border-left: 1.4rem solid red;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: cadetblue;
+  font-size: 1.3rem;
+}
+
+.sec_h,
+.sec_p {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .category_item {
+    grid-template-columns: 1fr;
+  }
+
+  .category_container {
+    padding: 2rem;
+  }
+
+  .category {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Trending products written by Subash Shah */
+.trending{
+  background-color:grey;
+  padding: 8rem 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.trending_img{
+ width:100%;
+}
+.trending_p{
+  color: red;
+}
+.trending_t{
+  color: white;
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.btn{
+  background-color: green;
+  padding: 1rem 2rem;
+  color: white;
+}
+.p_trending{
+  border-left: 1.4rem solid black;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: cadetblue;
+  font-size: 1.3rem;
+}
+
+
+/* Product Showcase grid written by Krishnesh Karn */
+.grid_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-1 {
+  grid-area: 1/1/2/4;
+}
+
+.box-2 {
+  position: relative;
+  grid-area: 2/1/4/2;
+}
+
+.box-p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.box-3 {
+  grid-area: 2/2/3/4;
+}
+
+.box-4 {
+  grid-area: 3/2/4/3;
+}
+
+.box-5 {
+  grid-area: 3/3/4/4;
+}
+
+.feature {
+  border-left: 1.4rem solid red;
+  padding-left: 1.5rem;
+}
+
+.featured_title {
+  margin-right: 2rem;
+}
+
+.box {
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+  color: white;
+  padding: 10px 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head,
+.para,
+.link {
+  margin-bottom: 10px;
+}
+
+.link a {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5 {
+    grid-area: auto;
+  }
+
+  .feature {
+    border-left: none;
+    border-bottom: 1.4rem solid red;
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .featured_title {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Footer CSS Design written by Abhinandan Sharma */
+  /* Main Styles */
+  footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0; /* Adjust padding for proper spacing */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-item {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-item h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-item p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 10px;
+}
+
+.footer-item ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.socials li {
+    margin-right: 20px;
+}
+
+.socials li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Service section design written by Krishnesh Karn */
+
+.services_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+  gap: 3rem;
+  margin:30px 0px;
+}
+.service{
+  text-align: center;
+}
+.service_title{
+margin:1.5rem;
+}
+
+  
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+  .hero-wrapper .sidebar {
+    display: none;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-container{
+    width: 98%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-section {
+    flex-basis: 100%;
+}
+.product {
+  width: 100%; 
+  margin-right: 0;
+}
+
+}
+
+
+
